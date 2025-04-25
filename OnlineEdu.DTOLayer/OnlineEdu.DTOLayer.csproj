@@ -10,8 +10,4 @@
     <ProjectReference Include="..\OnlineEdu.EntityLayer\OnlineEdu.EntityLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

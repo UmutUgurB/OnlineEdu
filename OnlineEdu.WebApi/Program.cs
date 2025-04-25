@@ -4,6 +4,7 @@ using OnlineEdu.BusinessLayer.Concrete;
 using OnlineEdu.DataAccessLayer.Abstract;
 using OnlineEdu.DataAccessLayer.Concrete;
 using OnlineEdu.DataAccessLayer.GenericRepository;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
