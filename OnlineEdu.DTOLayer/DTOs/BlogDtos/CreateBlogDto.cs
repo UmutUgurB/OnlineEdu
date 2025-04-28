@@ -11,6 +11,6 @@ namespace OnlineEdu.DTOLayer.DTOs.BlogDtos
         public DateTime BlogCreateDate { get; set; }
         public bool BlogIsActive { get; set; }
         public int BlogCategoryID { get; set; }
-        public ResultBlogCategoryDto BlogCategory { get; set; }
+       
     }
 }
